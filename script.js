@@ -10,3 +10,14 @@ let getMovie = () => {
   if (movieName.length <= 0) {
     result.innerHTML = `<h3 class="msg">Please Enter A Movie Name</h3>`;
   }
+//If input field is NOT empty
+  else {
+    fetch(url)
+      .then((resp) => resp.json())
+      .then((data) => {
+        //If movie exists in database
+        if (data.Response == "True") {
+          result.innerHTML = `
+            <div class="info">
+                <img src=${data.Poster} class="poster">
+                <div>
