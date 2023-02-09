@@ -38,3 +38,6 @@ body {
   padding: 0.7em;
   color: #ffffff;
 }
+.search-container input:focus {
+  border-color: #ffffff;
+}
