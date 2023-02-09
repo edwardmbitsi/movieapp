@@ -31,3 +31,16 @@ let getMovie = () => {
                         <span>${data.Year}</span>
                         <span>${data.Runtime}</span>
                     </div>
+                       <div class="genre">
+                        <div>${data.Genre.split(",").join("</div><div>")}</div>
+                    </div>
+                </div>
+            </div>
+            <h3>Plot:</h3>
+            <p>${data.Plot}</p>
+            <h3>Cast:</h3>
+            <p>${data.Actors}</p>
+            
+        `;
+        }
+        //If movie does NOT exists in database
