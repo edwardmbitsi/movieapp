@@ -46,3 +46,13 @@ body {
   border: none;
   cursor: pointer;
 }
+#result {
+  color: #ffffff;
+}
+.info {
+  position: relative;
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  align-items: center;
+  margin-top: 1.2em;
+}
