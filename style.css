@@ -32,3 +32,9 @@ body {
   outline: none;
   border-radius: 0.3em;
 }
+.search-container input {
+  background-color: transparent;
+  border: 1px solid #a0a0a0;
+  padding: 0.7em;
+  color: #ffffff;
+}
